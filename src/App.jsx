@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Logo from './component/Logo'
 import Users from './component/Routes/Users'
+import UserInfo from './component/Routes/UserInfo'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
           <Logo/> 
           <Routes>
             <Route path='/' element={<Users/>}> </Route>
+            <Route path='/:login' element={<UserInfo/>}> </Route>
           </Routes>
         </div>
       </div>
