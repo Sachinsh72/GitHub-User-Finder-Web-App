@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import Logo from "../Logo";
+// import Logo from "../Logo";
 import { useEffect, useState } from "react";
 import Loading from "../Loading";
 import Tabs from "../Tabs";
@@ -41,7 +41,7 @@ function UserInfo(){
         <div className="py-5">
             <button 
                 onClick={()=> navigate('/')} 
-                className="px-5 py-1 font-medium mx-1 my-4 bg-teal-600 rounded text=gray-200"
+                className="px-5 py-1 font-medium mx-1 my-4 bg-teal-600  hover:bg-blue-700 rounded text-white"
             >
                 Back
             </button>
@@ -52,27 +52,27 @@ function UserInfo(){
                         <img 
                             src={user.avatar_url} 
                             alt="avatar-image" 
-                            className=" w-[350px] border-4 border-teal-400 md:mx-0 mx-auto"
+                            className=" w-[350px] border-2 border-black md:mx-0 mx-auto"
                         />
 
                         <div className="text=lg px-3 leading-10 text-center lg:text-start md:text-start">
-                            <h1 className="text=3xl pb-4"> {user.name} </h1>
+                            <h1 className="text=3xl pb-4 font-bold text-red-950"> {user.name} </h1>
                             <h1>
-                                <span className="text-teal-400"> Username</span> : {user.login}
+                                <span className="text-purple-900 font-semibold"> Username</span> : {user.login}
                             </h1>
                             <h1>
-                                <span className="text-teal-400"> Followers</span> : {user.followers}
+                                <span className="text-purple-900 font-semibold"> Followers</span> : {user.followers}
                             </h1>
                             <h1>
-                                <span className="text-teal-400"> Following</span> : {user.following}
+                                <span className="text-purple-900 font-semibold"> Following</span> : {user.following}
                             </h1>
                             <h1>
-                                <span className="text-teal-400"> Public_Repositories</span> : {user.public_repos}
+                                <span className="text-purple-900 font-semibold"> Public_Repositories</span> : {user.public_repos}
                             </h1>
                             <h1>
-                                <span className="text-teal-400"> Join</span> : {new Date(user.created_at).toLocaleDateString()}
+                                <span className="text-purple-900 font-semibold"> Join</span> : {new Date(user.created_at).toLocaleDateString()}
                             </h1>
-                            <a href={user.html_url} target="_blank" className=" text-gray-200 font-semibold rounded cursor-pointer px-4 py-1 bg-teal-600 my-3 tracking-wider hover:bg-teal-700"> Profile visit</a>
+                            <a href={user.html_url} target="_blank" className=" text-white font-semibold rounded cursor-pointer px-4 py-1 bg-teal-600 my-3 tracking-wider hover:bg-blue-700"> Profile visit</a>
                         </div>
                     </li>
                 ))

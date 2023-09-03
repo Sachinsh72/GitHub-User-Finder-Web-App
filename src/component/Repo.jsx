@@ -2,8 +2,8 @@ function Repo({repo}){
     return(
         <>
             {repo.map((repo,idx) => (
-                <li key={idx} className="bg-gray-900 p-5 text-lg leading-8">
-                    <a href={repo.html_url} target="_blank" className="text-teal-500  break-words font-semibold hover:underline">
+                <li key={idx} className="bg-gray-400 p-5 text-lg leading-8 hover:bg-red-400">
+                    <a href={repo.html_url} target="_blank" className="text-blue-800  break-words font-semibold hover:underline">
                         {repo.full_name}
                     </a>
 

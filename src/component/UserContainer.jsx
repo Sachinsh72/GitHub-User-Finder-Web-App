@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Users from "./Routes/Users";
+// import Users from "./Routes/Users";
 
 function UserContainer({users}){
 
@@ -10,17 +10,17 @@ function UserContainer({users}){
 
                     user.login && (
 
-                    <li key={idx} className="flex w-[300px] border border-gray-500 bg-gray-900 p-5 flex-col items-center">
+                    <li key={idx} className="flex w-[200px]  p-3 flex-col items-center hover:bg-yellow-100">
                         <img 
                         src={user.avatar_url} 
                         alt="avatar img" 
-                        className="w-28 mb-4 border-4 border-teal-400 rounded-full"
+                        className="w-36 mb-4 border-2 border-black"
                         />
-                        <h1 className="text-xl text-teal-400">{user.login}</h1>
+                        <h1 className="text-xl text-slate-800">{user.login}</h1>
                         <Link to={`${user?.login}`}>
                         
                        
-                        <span className="text-gray-200 bg-teal-600 my-3 font-semibold block py-1 px-4 tracking-wide rounded">
+                        <span className="text-gray-200 bg-blue-600 hover:bg-blue-400 my-3 font-semibold block py-1 px-4 tracking-wide rounded">
                             View
                         </span>
 

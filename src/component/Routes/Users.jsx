@@ -38,18 +38,19 @@ function Users(){
 
     useEffect(()=>{
         allUsers();
-    },[setUsers]);
+    },[user,setUsers]);
 
     return(
         <div>
-            <div className="flex justify-center items-center h-11 my-5">
+            <div className="flex justify-center items-center h-12 my-5">
                 <input 
                     type="text" 
                     placeholder="Search github username.." 
-                    className="h-full md:w-2/3 text-gray-800 px-2 font-semibold outline-none"
+                    className="h-full md:w-2/3 px-2 font-semibold border-2 bg-slate-200"
                     ref={user}
                 />
-                <button onClick={findUser} className="bg-teal-500 font-semibold px-4 h-full">Search</button>
+                <button onClick={findUser} className="bg-red-500 text-white hover:bg-red-700 px-5 font-semibold  h-full">Search</button>
+                
             </div>
             
             { loading ? <Loading/> : <UserContainer users={users}/>}

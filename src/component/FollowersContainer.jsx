@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import Users from "./Routes/Users";
+// import { Link } from "react-router-dom";
+// import Users from "./Routes/Users";
 
 function FollowersContainer({users}){
 
@@ -10,14 +10,14 @@ function FollowersContainer({users}){
 
                     user.login && (
 
-                    <li key={idx} className="flex w-[200px] border border-gray-500 bg-gray-900 p-3 flex-col items-center">
+                    <li key={idx} className="flex w-[200px] hover:bg-yellow-100 p-3 flex-col items-center">
                         <img 
                         src={user.avatar_url} 
                         alt="avatar img" 
-                        className="w-24 mb-4 border-4 border-teal-400 rounded-full"
+                        className="w-24 mb-4 border-2 border-black rounded-lg"
                         />
                         <a href={`https://github.com/${user.login}`} target="_blank" >
-                        <h1 className="text-xl text-teal-400">{user.login}</h1>
+                        <h1 className="text-xl text-blue-900 hover:text-blue-950 font-semibold">{user.login}</h1>
                         </a>
                         
                     </li>
