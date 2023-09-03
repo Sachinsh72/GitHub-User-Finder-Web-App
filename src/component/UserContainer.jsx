@@ -10,11 +10,11 @@ function UserContainer({users}){
 
                     user.login && (
 
-                    <li key={idx} className="flex w-[200px] border border-gray-500 bg-gray-900 p-3 flex-col items-center">
+                    <li key={idx} className="flex w-[300px] border border-gray-500 bg-gray-900 p-5 flex-col items-center">
                         <img 
                         src={user.avatar_url} 
                         alt="avatar img" 
-                        className="w-24 mb-4 border-4 border-teal-400 rounded-full"
+                        className="w-28 mb-4 border-4 border-teal-400 rounded-full"
                         />
                         <h1 className="text-xl text-teal-400">{user.login}</h1>
                         <Link to={`${user?.login}`}>

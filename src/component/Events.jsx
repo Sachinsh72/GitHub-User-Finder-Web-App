@@ -1,24 +1,28 @@
+import {format} from "timeago.js";
+
 function Events({events}){
-    events.map((i)=>{
-        const logs= i.actor;
-        logs.map(e => {
+//     events.map((i)=>{
+//         const logs= i.actor;
+//         logs.map(e => {
             // e.login
-            console.log(e.login);
-        });
-    })
+    //         console.log(e.login);
+    //     });
+    // })
     // console.log(events.actor[0]);
     return(
         <>
-        
-            {/* {events?.map((ev,i)=>(
-                <li key={i}><img src={ev.actor?.avatar_url} className="w-16 rounded-full" alt="" />
+            {events.map((event,i) => (
+                <li key={i} className="flex gap-x-4 items-center">
+                    <img src={event.actor?.avatar_url} className="w-16 rounded-full" alt="avatar-image" />
                     <h1 className="bread-words">
-                        {ev.actor.login} {ev.type}
+                        {event?.actor?.login} {event?.type}
                         <br />
-                        {ev.repo.name}
+                        {event?.repo?.name}
+                        <br />
+                        <span className="text-sm">{format(event.created_at)}</span>
                     </h1> 
                 </li>
-            ))} */}
+            ))}
         </>
     )
 }

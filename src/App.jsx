@@ -5,10 +5,9 @@ import Users from './component/Routes/Users'
 import UserInfo from './component/Routes/UserInfo'
 
 function App() {
-
   return (
     <div>
-      <div className=' min-h-screen bg-black'>
+      <div className=' app min-h-screen bg-black flex pr-20 pl-20 pt-5'>
         <div className='container text-gray-200 py-3'> 
           <Logo/> 
           <Routes>
@@ -21,4 +20,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

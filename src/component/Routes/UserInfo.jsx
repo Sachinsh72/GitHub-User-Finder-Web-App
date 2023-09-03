@@ -88,7 +88,7 @@ function UserInfo(){
                 </div>
             )}
             {type === "received_events" && (
-                <div>
+                <div className=" grid grid-cols-1 md:grid-cols-2 gap-7 w-10/12 mx-auto">
                     { infos && <Events events={infos}/>}
                     
                 </div>
