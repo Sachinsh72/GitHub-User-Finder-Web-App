@@ -83,13 +83,13 @@ function UserInfo(){
             </div>
 
             {type === "repos" && (
-                <div>
-                    <Repo/>
+                <div className=" grid grid-cols-1 md:grid-cols-2 gap-7 w-10/12 mx-auto">
+                    {infos && <Repo repo={infos}/>}
                 </div>
             )}
             {type === "received_events" && (
                 <div>
-                    <Events/>
+                    { infos && <Events events={infos}/>}
                     
                 </div>
             )}

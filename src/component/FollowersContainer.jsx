@@ -16,7 +16,10 @@ function FollowersContainer({users}){
                         alt="avatar img" 
                         className="w-24 mb-4 border-4 border-teal-400 rounded-full"
                         />
+                        <a href={`https://github.com/${user.login}`} target="_blank" >
                         <h1 className="text-xl text-teal-400">{user.login}</h1>
+                        </a>
+                        
                     </li>
                     ))
                     )
