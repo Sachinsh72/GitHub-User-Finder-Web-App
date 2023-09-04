@@ -1,8 +1,7 @@
-// import React from "react";
-
 function Logo(){
     return (
-    <div className="flex pb-2 justify-center items-center border-b-2 border-pink-500">
+        //logo
+        <div className="flex pb-2 justify-center items-center border-b-2 border-pink-500">
         <img className="w-20 rounded" 
         src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
         alt="github-logo" />

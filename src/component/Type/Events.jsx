@@ -1,5 +1,6 @@
 import {format} from "timeago.js";
 
+//for tab's seconds type - Activity
 function Events({events}){
     return(
         <>

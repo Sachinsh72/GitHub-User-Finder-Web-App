@@ -1,7 +1,9 @@
 function Repo({repo}){
+
+    //for tab's first type - Repositories
     return(
         <>
-            {repo.map((repo,idx) => (
+            { repo.map((repo,idx) => (
                 <li key={idx} className="bg-gray-400 p-5 text-lg leading-8 hover:bg-red-400">
                     <a href={repo.html_url} target="_blank" className="text-blue-800  break-words font-semibold hover:underline">
                         {repo.full_name}
@@ -12,9 +14,9 @@ function Repo({repo}){
                         <h1 className="text-sm font-semibold">forks : {repo.forks}</h1>
                         <h1 className="text-sm font-semibold">starts : {repo.stargazers_count}</h1>
                     </div>
-                
                 </li>
-            ))}
+                ))
+            }
         </>
     )
 }

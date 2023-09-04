@@ -1,3 +1,4 @@
+//tabs below the userinfo
 function Tabs({type, setType}){
     return(
         <>
