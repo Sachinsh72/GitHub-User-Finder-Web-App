@@ -9,7 +9,7 @@ function Repo({repo}){
                         {repo.full_name}
                     </a>
 
-                    <div className=" flex gap-x-5">
+                    <div className=" gap-x-5  flex flex-col  items-center  lg:flex lg:flex-row lg:items-start">
                         <h1 className="text-sm font-semibold"> <span className="h-5"> 🟢</span> {repo.language}</h1>
                         <h1 className="text-sm font-semibold">forks : {repo.forks}</h1>
                         <h1 className="text-sm font-semibold">starts : {repo.stargazers_count}</h1>
