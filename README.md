@@ -1,5 +1,5 @@
 # GitHub-User-Finder-Web-App
-Developed a web application using React that allows users to input a GitHub username. Upon user input, the app display the avatar of the user fetched from the GitHub API. And allows to display the user info like Username, Followers, Following, Public_Repositories, and Join date. It also have three extra tabs to dispay Public_Repositories, Activity and Followers list with thier avatar and username.
+Developed a web application using React that allows users to input a GitHub username. Upon user input, the app display the avatar of the user fetched from the GitHub API. And allows to display the user info like Username, Followers, Following, Public_Repositories, and Join date. It also have three extra tabs to display Public_Repositories, Activity and Followers list with their avatar and username.
 
 <img width="946" alt="Screenshot 2023-09-04 163731" src="https://github.com/Sachinsh72/GitHub-User-Finder-Web-App/assets/91846348/e38690e9-1c9f-46b8-a57c-7a9f6a292dd7"> <br/>
 
@@ -8,16 +8,16 @@ Developed a web application using React that allows users to input a GitHub user
 - Input a GitHub username.
 - User's avatar and username.
 - User's followers
-- user's joined date
+- User's joined date
 - User's public_repositories
-- User's acitivite
+- User's activity
 - Fully responsive
 
 ## Using React Feature
 - React Router 
 - useEffect()
 - useState()
-- Api fetch
+- Fetch API
 - Custom Hook
 - Debounce
 
