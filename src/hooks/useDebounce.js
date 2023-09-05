@@ -1,5 +1,5 @@
 //debounce
-function useDebounce(cd, delay = 1000){
+function useDebounce(cd, delay = 2000){
     let timerid;
 
     return(...args) => {
